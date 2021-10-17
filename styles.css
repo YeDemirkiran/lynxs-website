@@ -1,4 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+  
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+header {
+  padding: 2% 0 1% 0;
+
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+
+  background-color: #000000;
+  color: #ffffff;
+  border-bottom: 2px solid red;
+}
+
+header .logo {
+  font-size: 2.5rem;
+  font-weight: 800;
+}
+
+header .main-nav {
+  display: flex;
+  margin-top: 5%;
+}
+
+header .main-nav li {
+  margin: 0 12px 0 12px;
+}
+
+header .main-nav a {
+  transition: all 0.1s ease 0s;
+}
+
+header .main-nav a:hover {
+  color: red;
+}
+
+header .theme-buttons {
+  display: flex;
+  margin-top: 15px;
+}
+
+header .theme-buttons li {
+  margin: 0 10px 0 10px;
+}
+
+header .theme-buttons button {
+  background-color: black;
+  color: white;
+  border: 1px solid white;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+
+  padding: 6px;
+  cursor: pointer;
+  transition: all 0.15s ease 0s;
+}
+
+header .theme-buttons button:hover {
+  border-color: red;
+  color: red;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  margin: 20px 0 0 0;
+}
+
+main p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+main .fav-songs {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+
+  background-color: black;
+  width: 95%;
+}
+
+main .main-item {
+  margin: 2%;
+  background-color: darkred;
+  padding: 5px 5px 5px 5px;
+
+  transition: all 0.1s ease 0s;
+}
+
+main .main-item:hover {
+  background-color: red;
+}
+
+main .yt-player {
+  width: 360px;
+  height: 240px;
+}
+
+aside {
+  background-color: #00000022;
+  color: black;
+
+  width: 95%;
+  margin: auto;
+  padding: 60px 0 50px 0;
+  margin-bottom: 50px;
+
+  text-align: center;
+}
+
+aside h2 {
+  margin-bottom: 20px;
+}
+
+aside p {
+  font-size: 0.9rem;
+  margin-top: 20px;
+}
+
+aside input[type="email"] {
+  background-color: white;
+  width: 20%;
+  padding: 6px;
+  border: none;
+  outline: none;
+}
+
+aside input[type="submit"] {
+  background-color: white;
+  padding: 6px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.15s ease 0s;
+}
+
+aside input[type="submit"]:hover {
+  background-color: red;
+  color: white;
+}
+ 
+footer {
+  background-color: #000000;
+  color: #ffffff;
+  text-align: center;
+  font-size: 1rem;
+  text-transform: uppercase;
+  padding: 20px;
 }
